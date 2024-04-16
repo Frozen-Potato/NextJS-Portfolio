@@ -15,6 +15,8 @@ const AboutPage = () => {
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
+  const skill = ["GIT" , "JavaScript", "Typescript" ,"Pascal" ,"NodeJS", "ReactJS", "NextJS", "ExpressJS" ,"Redux", "Framer Motion" , "MUI", "Tailwind", "Python", "MySQL", "MongoDB", "SQL", "EJS", "Docker" , "AWS" ]
+  
   return (
     <motion.div
       className="h-full"
@@ -78,57 +80,13 @@ const AboutPage = () => {
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                JavaScript
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                TypeScript
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                React.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Next.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                SCSS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Tailwind CSS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                MongoDB
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                MySQL
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Node.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Express.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Redux
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Framer Motion
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Bash
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Docker
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                AWS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Firebase
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Git
-              </div>
+              { skill && (
+                skill.map((skill) => (
+                  <div key={skill} className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                    {skill}
+                  </div>
+                ))
+              )}
             </motion.div>
             {/* SKILL SCROLL SVG */}
             <motion.svg
