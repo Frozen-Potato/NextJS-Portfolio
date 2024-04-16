@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Computer = () => {
     return (
         <div>
-            <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="h-full w-full lg:h-full lg:w-full" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_2_2)">
                     <path d="M87.374 50.087V269.357H424.626V50.087H87.374ZM391.235 235.965H120.765V83.478H391.235V235.965Z" fill="black"/>
                     <path d="M448.189 415.822H339.111V449.213H448.189V415.822Z" fill="black"/>
