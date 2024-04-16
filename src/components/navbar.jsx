@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./navLink";
 import { motion } from "framer-motion";
-import cloudflareLoader from "../../imageLoader";
+import ImageLoader from "../../imageLoader";
 
 const links = [
   { url: "/", title: "Home" },
@@ -82,13 +82,13 @@ const Navbar = () => {
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 w-1/3 justify-end">
         <Link href="https://github.com/Frozen-Potato">
-          <Image loader={cloudflareLoader} src="/github.png" alt="" width={24} height={24} />
+          <Image loader={ImageLoader} src="/github.png" alt="" width={24} height={24} />
         </Link>
         <Link href="https://www.instagram.com/exiled_goblin/">
-          <Image loader={cloudflareLoader} src="/instagram.png" alt="" width={24} height={24} />
+          <Image loader={ImageLoader} src="/instagram.png" alt="" width={24} height={24} />
         </Link>
         <Link href="https://www.linkedin.com/in/phamgiakien/">
-          <Image loader={cloudflareLoader} src="/linkedin.png" alt="" width={24} height={24} />
+          <Image loader={ImageLoader} src="/linkedin.png" alt="" width={24} height={24} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
