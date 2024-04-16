@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import cloudflareLoader from "../../../imageLoader";
 
 const items = [
   {
@@ -65,7 +66,7 @@ const PortfolioPage = () => {
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px]  xl:w-[600px]">
                     { item.imgCheck ?  (                  
-                      <Image src={item.img} alt="" fill />                  
+                      <Image loader={cloudflareLoader} src={item.img} alt="" fill />                  
                     ) : (
                       <Database />
                     )}
