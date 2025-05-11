@@ -11,29 +11,31 @@ The project is deployed via Cloudflare Pages and is live at:
 ---
 ## 🛠️ Tech Stack
 
-    Framework: Next.js
+Framework: Next.js
 
-    Styling: Tailwind CSS
+Styling: Tailwind CSS
 
-    Animations: Framer Motion
+Animations: Framer Motion
 
-    Deployment: Cloudflare Pages
+Deployment: Cloudflare Pages
 
-    Language: TypeScript (or JavaScript, depending on what you used)
+Language: TypeScript (or JavaScript, depending on what you used)
 
-    Version Control: Git & GitHub
+Version Control: Git & GitHub
+
 ---
 ## ✨ Features
 
-    Fully responsive design
+Fully responsive design
 
-    Smooth animations with Framer Motion
+Smooth animations with Framer Motion
 
-    Clean and minimal layout
+Clean and minimal layout
 
-    SEO-friendly architecture
+SEO-friendly architecture
 
-    Easily customizable components
+Easily customizable components
+
 ---
 ## 💻 Getting Started
 
